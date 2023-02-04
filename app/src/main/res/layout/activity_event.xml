@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <CheckBox android:id="@+id/checkbox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music "
+        android:layout_margin="10px"
+        android:height="10px"
+       />
+
+    <RatingBar
+        android:id="@+id/rating1"
+        style="@android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10px"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="5"
+        android:rating="0"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+    <CheckBox android:id="@+id/checkbox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:text="Dance"
+        />
+    <RatingBar
+        android:rating="0"
+        android:numStars="5"
+        android:layout_margin="10px"
+        android:id="@+id/rating2"
+        style="@android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:isIndicator="true"
+        android:max="5"/>
+    <CheckBox android:id="@+id/checkbox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_margin="10px"
+        />
+    <RatingBar
+        android:layout_height="40dp"
+        android:rating="0"
+        android:numStars="5"
+        android:layout_margin="10px"
+        android:id="@+id/rating3"
+        style="@android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:isIndicator="true"
+        android:max="5"/>
+    <CheckBox android:id="@+id/checkbox4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:text="Fasion"
+        />
+    <RatingBar
+        android:layout_height="40dp"
+        android:rating="0"
+        android:numStars="5"
+        android:layout_margin="10px"
+        android:id="@+id/rating4"
+        style="@android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:isIndicator="true"
+        android:max="5"/>
+    <CheckBox android:id="@+id/checkbox5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:layout_margin="10px"
+        />
+
+    <RatingBar
+        android:id="@+id/rating5"
+        style="@android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10px"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="5"
+        android:rating="0"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+
+    <Button
+
+
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+
+    <Button
+
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Clear" />
+
+</LinearLayout>
