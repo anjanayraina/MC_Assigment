@@ -22,7 +22,8 @@ public class EventActivity extends AppCompatActivity {
         CheckBox ch3 = findViewById(R.id.checkbox3);
         CheckBox ch4 = findViewById(R.id.checkbox4);
         CheckBox ch5 = findViewById(R.id.checkbox5);
-
+        String name = getIntent().getStringExtra("name");
+        String role = getIntent().getStringExtra("role");
         RatingBar rating1  = findViewById(R.id.rating1);
         rating1.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -173,6 +174,14 @@ public class EventActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(EventActivity.this , EndActivity.class);
+                i.putExtra("name" , name);
+                i.putExtra("role" , role);
+                i.putExtra("music" , String.valueOf(rating1.getRating()));
+                i.putExtra("dance" , String.valueOf(rating2.getRating()));
+                i.putExtra("play" , String.valueOf(rating3.getRating()));
+                i.putExtra("fasion" , String.valueOf(rating4.getRating()));
+                i.putExtra("food" , String.valueOf(rating5.getRating()));
+
                 startActivity(i);
             }
         });
