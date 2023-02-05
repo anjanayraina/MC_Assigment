@@ -20,6 +20,17 @@ public class EndActivity extends AppCompatActivity {
         String food = getIntent().getStringExtra("food");
         TextView t1 = (TextView) findViewById(R.id.textView4);
         t1.setText(t1.getText() + name);
-
+        t1 = (TextView) findViewById(R.id.textView5);
+        t1.setText(t1.getText() + role);
+        t1 = (TextView) findViewById(R.id.textView6);
+        t1.setText(t1.getText() + (music.equals("-1") ? "Not Selected" : music));
+        t1 = (TextView) findViewById(R.id.textView7);
+        t1.setText(t1.getText() + (dance.equals("-1") ? "Not Selected" : dance));
+        t1 = (TextView) findViewById(R.id.textView8);
+        t1.setText(t1.getText() + (play.equals("-1") ? "Not Selected" : play));
+        t1 = (TextView) findViewById(R.id.textView9);
+        t1.setText(t1.getText() + (fasion.equals("-1") ? "not Selected" : fasion));
+        t1 = (TextView) findViewById(R.id.textView10);
+        t1.setText(t1.getText() + (food.equals("-1") ? "Not Selected" : food));
     }
 }

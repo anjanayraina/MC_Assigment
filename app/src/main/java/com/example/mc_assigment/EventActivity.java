@@ -176,11 +176,11 @@ public class EventActivity extends AppCompatActivity {
                 Intent i = new Intent(EventActivity.this , EndActivity.class);
                 i.putExtra("name" , name);
                 i.putExtra("role" , role);
-                i.putExtra("music" , String.valueOf(rating1.getRating()));
-                i.putExtra("dance" , String.valueOf(rating2.getRating()));
-                i.putExtra("play" , String.valueOf(rating3.getRating()));
-                i.putExtra("fasion" , String.valueOf(rating4.getRating()));
-                i.putExtra("food" , String.valueOf(rating5.getRating()));
+                i.putExtra("music" , ch1.isChecked() ? String.valueOf(rating1.getRating()) : String.valueOf(-1));
+                i.putExtra("dance" , ch2.isChecked() ? String.valueOf(rating2.getRating()) : String.valueOf(-1));
+                i.putExtra("play" , ch3.isChecked() ? String.valueOf(rating3.getRating()) : String.valueOf(-1));
+                i.putExtra("fasion" , ch4.isChecked() ? String.valueOf(rating4.getRating()) : String.valueOf(-1));
+                i.putExtra("food" , ch5.isChecked() ? String.valueOf(rating5.getRating()) : String.valueOf(-1));
 
                 startActivity(i);
             }
